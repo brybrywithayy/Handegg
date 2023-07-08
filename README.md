@@ -3,10 +3,6 @@ Handegg (football simulation) to be used as backend of a browser game
 
 This is an early build of what will be a browser game that simulates fictional college football games.
 
-To-Do:
-- Convert all Java files to python3
-- Fill in any remaining gaps in the implementation needed for production - will need to evaluate what we have once conversion is complete
-
 Concept:
 - project will be structured so that each team is made of 23 to 46 players
 - players are to be randomized by the code once then saved to file for import when program is first executed
