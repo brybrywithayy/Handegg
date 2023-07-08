@@ -1,4 +1,4 @@
-package games.gainsay;
+package com.gainsay;
 
 import java.util.LinkedList;
 import java.util.List;

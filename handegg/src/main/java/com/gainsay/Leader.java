@@ -1,22 +1,22 @@
-package games.gainsay;
+package com.gainsay;
 
-public class Kicker extends Player {
+public class Leader extends Player {
 
-    public Kicker() {
+    public Leader() {
         super();
-        this.position = PlayerPositionType.KICKER;
-        this.speed = generateRandomInt(90, 1);
+        this.position = PlayerPositionType.LEADER;
+        this.speed = generateRandomInt(95, 1);
         this.strength = generateRandomInt(99, 25);
-        this.stamina = generateRandomInt(99, 25);
+        this.stamina = generateRandomInt(99, 50);
         this.agility = generateRandomInt(50, 1);
-        this.blocking = generateRandomInt(50, 1);
-        this.catching = generateRandomInt(50, 1);
-        this.tackling = generateRandomInt(60, 1);
-        this.throwing = generateRandomInt(80, 1);
-        this.kicking = generateRandomInt(99, 60);
+        this.blocking = generateRandomInt(30, 1);
+        this.catching = generateRandomInt(70, 1);
+        this.tackling = generateRandomInt(70, 1);
+        this.throwing = generateRandomInt(99, 55);
+        this.kicking = generateRandomInt(80, 1);
     }
 
-    public Kicker(String name, String college, PlayerPositionType position, int age, int speed,
+    public Leader(String name, String college, PlayerPositionType position, int age, int speed,
                   int strength, int stamina, int catching, int blocking, int tackling, int agility,
                   int throwing, int kicking) {
         super(name, college, position, age, speed, strength, stamina, catching, blocking, tackling,
@@ -38,4 +38,6 @@ public class Kicker extends Player {
                ", kicking=" + kicking +
                '}';
     }
+
+    // TODO code Leader behaviors
 }

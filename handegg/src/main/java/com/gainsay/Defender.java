@@ -1,22 +1,22 @@
-package games.gainsay;
+package com.gainsay;
 
-public class Passer extends Player {
+public class Defender extends Player {
 
-    public Passer() {
+    public Defender() {
         super();
-        this.position = PlayerPositionType.PASSER;
-        this.speed = generateRandomInt(95, 1);
+        this.position = PlayerPositionType.DEFENDER;
+        this.speed = generateRandomInt(99, 1);
         this.strength = generateRandomInt(99, 25);
         this.stamina = generateRandomInt(99, 50);
-        this.agility = generateRandomInt(50, 1);
-        this.blocking = generateRandomInt(30, 1);
-        this.catching = generateRandomInt(70, 1);
-        this.tackling = generateRandomInt(70, 1);
-        this.throwing = generateRandomInt(99, 55);
-        this.kicking = generateRandomInt(80, 1);
+        this.agility = generateRandomInt(75, 1);
+        this.blocking = generateRandomInt(70, 1);
+        this.catching = generateRandomInt(99, 1);
+        this.tackling = generateRandomInt(99, 60);
+        this.throwing = generateRandomInt(50, 1);
+        this.kicking = generateRandomInt(50, 1);
     }
 
-    public Passer(String name, String college, PlayerPositionType position, int age, int speed,
+    public Defender(String name, String college, PlayerPositionType position, int age, int speed,
                   int strength, int stamina, int catching, int blocking, int tackling, int agility,
                   int throwing, int kicking) {
         super(name, college, position, age, speed, strength, stamina, catching, blocking, tackling,
@@ -38,6 +38,4 @@ public class Passer extends Player {
                ", kicking=" + kicking +
                '}';
     }
-
-    // TODO code Passer behaviors
 }

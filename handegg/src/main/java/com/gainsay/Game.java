@@ -1,4 +1,4 @@
-package games.gainsay;
+package com.gainsay;
 
 public class Game {
 

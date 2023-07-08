@@ -1,4 +1,4 @@
-package games.gainsay;
+package com.gainsay;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

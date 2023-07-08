@@ -1,22 +1,22 @@
-package games.gainsay;
+package com.gainsay;
 
-public class Scorer extends Player {
+public class Blocker extends Player {
 
-    public Scorer() {
+    public Blocker() {
         super();
-        this.position = PlayerPositionType.SCORER;
-        this.speed = generateRandomInt(99, 50);
-        this.strength = generateRandomInt(99, 40);
+        this.position = PlayerPositionType.BLOCKER;
+        this.speed = generateRandomInt(80, 1);
+        this.strength = generateRandomInt(99, 65);
         this.stamina = generateRandomInt(99, 50);
-        this.agility = generateRandomInt(99, 50);
-        this.blocking = generateRandomInt(65, 15);
-        this.catching = generateRandomInt(90, 45);
-        this.tackling = generateRandomInt(70, 1);
-        this.throwing = generateRandomInt(75, 1);
+        this.agility = generateRandomInt(80, 45);
+        this.blocking = generateRandomInt(99, 60);
+        this.catching = generateRandomInt(50, 1);
+        this.tackling = generateRandomInt(85, 1);
+        this.throwing = generateRandomInt(50, 1);
         this.kicking = generateRandomInt(50, 1);
     }
 
-    public Scorer(String name, String college, PlayerPositionType position, int age, int speed,
+    public Blocker(String name, String college, PlayerPositionType position, int age, int speed,
                   int strength, int stamina, int catching, int blocking, int tackling, int agility,
                   int throwing, int kicking) {
         super(name, college, position, age, speed, strength, stamina, catching, blocking, tackling,
